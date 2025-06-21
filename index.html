@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>イラスト作品サイト - 著作権について</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>月の国</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>著作権保護についてのお願い</h2>
+      <p>当サイトのイラスト作品の無断転載、複製、悪用は固くお断りします。</p>
+      <p>子供でもわかる著作権保護法(ちょさくけんほごほう)<a href="https://pf.bunka.go.jp/chosaku/chosakuken/hakase/hajimete_1/index.html" target="_blank" rel="noopener noreferrer">文化庁 著作権保護のページ</a>をご覧ください。</p>
+    </section>
+
+    <nav>
+      <a href="gallery.html" class="btn">作品ページへ進む</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>© 2025 神野香（kaminokaori）</p>
+  </footer>
+</body>
+</html>
