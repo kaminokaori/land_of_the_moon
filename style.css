@@ -25,6 +25,45 @@ h1 {
   font-size: 2.5rem;
   margin: 0;
 }
+header.banner {
+  background-image: url("yuta801-14_TP_V.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4); /* 背景画像が明るい時の調整 */
+}
+
+header.banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header.banner p {
+  font-size: 1.2rem;
+}
+
+header.banner {
+  background-image: url("yuta801-14_TP_V.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4); /* 背景画像が明るい時の調整 */
+}
+
+header.banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header.banner p {
+  font-size: 1.2rem;
+}
 
 main {
   padding: 40px 20px;
