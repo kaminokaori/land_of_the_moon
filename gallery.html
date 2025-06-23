@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
+  <script>
+  const correct = "Eye";
+  if (localStorage.getItem("galleryPass") !== correct) {
+    // ここで止めて即リダイレクト！
+    window.location.replace("gate.html");
+  }
+</script>
+
   <meta charset="UTF-8" />
   <title>作品ギャラリー - 月の国</title>
   <link rel="stylesheet" href="style.css" />
@@ -47,15 +56,5 @@
     <p>© 2025 神野香（kaminokaori）</p>
   </footer>
 
-  <!-- gallery.htmlのhead内やbody直後に -->
-<script>
-  // ローカルストレージに合言葉を保存して使う例
-  const correct = "Eye";
-
-  if (localStorage.getItem("galleryPass") !== correct) {
-    alert("閲覧には合言葉が必要です！");
-    window.location.href = "gate.html"; // 鍵ページに戻す
-  }
-</script>
 </body>
 </html>
