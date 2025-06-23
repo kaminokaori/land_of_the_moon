@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>作品ギャラリー - 月の国</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>感情の吐瀉物</h1>
+    <nav>
+      <a href="index.html">玄関に戻る</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>イラスト一覧</h2>
+<div class="gallery">
+  <figure>
+    <a href="20250403.jpg" target="_blank">
+      <img src="20250403.jpg" alt="イラスト1" width="200" />
+    </a>
+    <figcaption>与えられる毒</figcaption>
+  </figure>
+
+  <figure>
+    <a href="20250531.jpg" target="_blank">
+      <img src="20250531.jpg" alt="イラスト2" width="200" />
+    </a>
+    <figcaption>三夜の夢</figcaption>
+  </figure>
+
+  <figure>
+    <a href="20180924.jpg" target="_blank">
+      <img src="20180924.jpg" alt="イラスト3" width="200" />
+    </a>
+    <figcaption>お目々抉抜かちゃった</figcaption>
+  </figure>
+        <!-- 必要に応じて増やせます -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 神野香（kaminokaori）</p>
+  </footer>
+
+  <!-- gallery.htmlのhead内やbody直後に -->
+<script>
+  // ローカルストレージに合言葉を保存して使う例
+  const correct = "Eye";
+
+  if (localStorage.getItem("galleryPass") !== correct) {
+    alert("閲覧には合言葉が必要です！");
+    window.location.href = "gate.html"; // 鍵ページに戻す
+  }
+</script>
+</body>
+</html>

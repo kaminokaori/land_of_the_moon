@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>鍵付きギャラリー</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="unlock.js" defer></script>
+</head>
+<body>
+  <h1>鍵付きギャラリー</h1>
+  <p>閲覧には合言葉が必要です。</p>
+<input type="password" id="password" placeholder="目は英語で？" onkeydown="if(event.key==='Enter')checkPassword()">
+  <button onclick="checkPassword()">入室する</button>
+  <p id="error" style="color:red;"></p>
+</body>
+</html>
