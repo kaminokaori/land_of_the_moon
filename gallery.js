@@ -5,20 +5,21 @@ if (localStorage.getItem("galleryPass") !== correct) {
 } else {
   const galleryData = [
     {
-      src: "20250403.jpg",
-      title: "与えられる毒",
-      caption: "危険だと分かってても浴びずにはいられなかった。"
-    },
-    {
       src: "20250531.jpg",
       title: "三夜の夢",
       caption: "もっと酷く抱いて欲しかった。"
     },
     {
-      src: "20180924.jpg",
-      title: "お目々抉抜かちゃった",
-      caption: "「気が移ってしまうなら、いらないよね」と。"
+      src: "2025_05_24.jpg",
+      title: "私に後悔して欲しいのか。",
+      caption: "嗤える。"
     },
+    {
+      src: "20250403.jpg",
+      title: "与えられる毒",
+      caption: "危険だと分かってても浴びずにはいられなかった。"
+    },
+
   ];
 
   const container = document.getElementById("galleryArea");
