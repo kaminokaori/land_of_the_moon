@@ -10,7 +10,7 @@ if (localStorage.getItem("galleryPass") !== correct) {
     },
     {
       src: "2025_05_24.jpg",
-      title: "私に後悔して欲しいのか。嗤える。",
+      title: "私に後悔して欲しいのか。",
     },
     {
       src: "20250403.jpg",
