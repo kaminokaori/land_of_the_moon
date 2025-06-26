@@ -42,7 +42,18 @@ if (localStorage.getItem("galleryPass") !== correct) {
       </figure>
     `;
   }
+html += `
+  </div> <!-- .gallery 終了 -->
 
+  <div style="text-align: center; margin-top: 30px;">
+    <button onclick="location.href='index.html'" style="all: unset; cursor: pointer; text-decoration: underline; color: #f0f0f0;">
+      トップページに戻る
+    </button>
+  </div>
+</section>
+`;
+
+  
   html += `</div></section>`;
 
   container.innerHTML = html;
