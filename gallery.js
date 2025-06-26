@@ -13,8 +13,8 @@ if (localStorage.getItem("galleryPass") !== correct) {
       title: "三夜の夢",
     },
     {
-      src: "20180924.jpg",
-      title: "お目々抉抜かちゃった",
+      src: "2025_05_24.jpg",
+      title: "私に後悔して欲しいのか。嗤える。",
     },
   ];
 
