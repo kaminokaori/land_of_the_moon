@@ -5,10 +5,6 @@ if (localStorage.getItem("galleryPass") !== correct) {
 } else {
   const galleryData = [
     {
-      src: "20250403.jpg",
-      title: "与えられる毒",
-    },
-    {
       src: "20250531.jpg",
       title: "三夜の夢",
     },
@@ -16,6 +12,11 @@ if (localStorage.getItem("galleryPass") !== correct) {
       src: "2025_05_24.jpg",
       title: "私に後悔して欲しいのか。嗤える。",
     },
+    {
+      src: "20250403.jpg",
+      title: "与えられる毒",
+    },
+
   ];
 
   const container = document.getElementById("galleryArea");
