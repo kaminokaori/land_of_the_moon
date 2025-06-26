@@ -17,7 +17,7 @@ if (localStorage.getItem("galleryPass") !== correct) {
     {
       src: "20250403.jpg",
       title: "与えられる毒",
-      caption: "危険だと分かってても浴びずにはいられなかった。"
+      caption: "毒だと分かってても浴びずにはいられなかった。"
     },
 
   ];
