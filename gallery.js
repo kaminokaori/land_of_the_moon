@@ -5,18 +5,20 @@ if (localStorage.getItem("galleryPass") !== correct) {
 } else {
   const galleryData = [
     {
-      src: "20250531.jpg",
-      title: "三夜の夢",
-    },
-    {
-      src: "2025_05_24.jpg",
-      title: "私に後悔して欲しいのか。",
-    },
-    {
       src: "20250403.jpg",
       title: "与えられる毒",
+      caption: "危険だと分かってても浴びずにはいられなかった。"
     },
-
+    {
+      src: "20250531.jpg",
+      title: "三夜の夢",
+      caption: "もっと酷く抱いて欲しかった。"
+    },
+    {
+      src: "20180924.jpg",
+      title: "お目々抉抜かちゃった",
+      caption: "「気が移ってしまうなら、いらないよね」と。"
+    },
   ];
 
   const container = document.getElementById("galleryArea");
@@ -29,36 +31,48 @@ if (localStorage.getItem("galleryPass") !== correct) {
   for (const item of galleryData) {
     html += `
       <figure>
-        <a href="${item.src}" target="_blank">
-          <img src="${item.src}" alt="${item.title}" width="200" />
-        </a>
+        <img src="${item.src}" 
+             alt="${item.title}" 
+             width="200" 
+             style="cursor:pointer;" 
+             data-title="${item.title}" 
+             data-caption="${item.caption || ""}" />
         <figcaption>${item.title}</figcaption>
       </figure>
     `;
   }
 
-  html += `</div>`;
-
-   // ここで戻るボタンを追加
-html += `
-  <div style="text-align: center; margin-top: 30px;">
-    <button onclick="location.href='index.html'" 
-      style="
-        padding: 10px 20px;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        color: #f0f0f0;
-        cursor: pointer;
-        border-radius: 0;
-        text-decoration: underline;
-      ">
-      トップページに戻る
-    </button>
-  </div>
-`;
-
-  html += `</section>`;
+  html += `</div></section>`;
 
   container.innerHTML = html;
+
+  // モーダル関連
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const modalCaption = document.getElementById("modalCaption");
+  const modalClose = document.getElementById("modalClose");
+
+  // 画像クリックでモーダル表示
+  document.querySelectorAll("#galleryArea img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalCaption.textContent = img.dataset.caption || img.alt || "";
+    });
+  });
+
+  // 閉じるボタンでモーダル閉じる
+  modalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalImg.src = "";
+    modalCaption.textContent = "";
+  });
+
+  // 背景クリックでも閉じる
+  modal.addEventListener("click", e => {
+    if (e.target === modal) {
+      modalClose.click();
+    }
+  });
 }
