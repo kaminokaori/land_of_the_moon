@@ -32,7 +32,8 @@ if (localStorage.getItem("galleryPass") !== correct) {
     {
       src: "scan-001.jpg",
       title: "Mayra",
-      caption: "背景貴男様へ"
+      caption: "背景貴男様へ
+        https://youtube.com/shorts/ZdKwVQPoS2c?si=cLiw0d7f05LLhihJ"
     },
   ];
 
