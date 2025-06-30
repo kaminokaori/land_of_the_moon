@@ -34,6 +34,41 @@ if (localStorage.getItem("galleryPass") !== correct) {
       title: "Mayra",
       caption: "背景貴男様へ"
     },
+    {
+      src: "20220620.jpg",
+      title: "engrave",
+      caption: "girugamesh一時復活時祝い絵"
+    },
+    {
+      src: "20220615.jpg",
+      title: "でろぉ",
+      caption: "「あのですねぇ」"
+    },
+    {
+      src: "20220528.jpg",
+      title: "「アイ」",
+      caption: ""
+    },
+    {
+      src: "20220522-02.jpg",
+      title: "レイラ",
+      caption: ""
+    },
+    {
+      src: "20220501.jpg",
+      title: "異教徒",
+      caption: ""
+    },
+    {
+      src: "20220103jinx.jpg",
+      title: "LOL-JINX",
+      caption: "ファンアート"
+    },
+    {
+      src: "20210708-01.jpg",
+      title: "Datura",
+      caption: "-花言葉-"
+    },
   ];
 
   const container = document.getElementById("galleryArea");
