@@ -19,7 +19,21 @@ if (localStorage.getItem("galleryPass") !== correct) {
       title: "与えられる毒",
       caption: "毒だと分かってても浴びずにはいられなかった。"
     },
-
+    {
+      src: "IMG_20231201_214845.jpg",
+      title: "悪意",
+      caption: "いつも笑顔でいるとお思いで。"
+    },
+    {
+      src: "IMG_20230922_030852.jpg",
+      title: "無象無象",
+      caption: "握り潰してやる。"
+    },
+    {
+      src: "scan-001.jpg",
+      title: "Mayra",
+      caption: "背景貴男様へ"
+    },
   ];
 
   const container = document.getElementById("galleryArea");
