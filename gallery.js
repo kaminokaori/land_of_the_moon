@@ -32,7 +32,7 @@ if (localStorage.getItem("galleryPass") !== correct) {
     {
       src: "scan-001.jpg",
       title: "Mayra",
-      caption: "背景貴男様へ
+      caption: "背景貴男様へ"
     },
   ];
 
