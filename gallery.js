@@ -154,7 +154,8 @@ galleryImages.forEach((img, index) => {
 // 左右キーで画像切り替え
 document.addEventListener("keydown", (e) => {
   if (modal.style.display === "flex") {
-    if (e.key === "ArrowRight") {
+    if (e.key === "Escape") {
+      modalclose.click();
       currentIndex = (currentIndex + 1) % galleryImages.length;
     } else if (e.key === "ArrowLeft") {
       currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
