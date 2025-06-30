@@ -136,4 +136,37 @@ html += `
       modalClose.click();
     }
   });
+  let currentIndex = -1;
+
+// ギャラリー画像のNodeListを取得
+const galleryImages = Array.from(document.querySelectorAll("#galleryArea img"));
+
+galleryImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modalCaption.textContent = img.dataset.caption || img.alt || "";
+    currentIndex = index;
+  });
+});
+
+// 左右キーで画像切り替え
+document.addEventListener("keydown", (e) => {
+  if (modal.style.display === "flex") {
+    if (e.key === "ArrowRight") {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+    } else if (e.key === "ArrowLeft") {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    } else {
+      return;
+    }
+
+    const nextImg = galleryImages[currentIndex];
+    modalImg.src = nextImg.src;
+    modalImg.alt = nextImg.alt;
+    modalCaption.textContent = nextImg.dataset.caption || nextImg.alt || "";
+  }
+});
 }
+
