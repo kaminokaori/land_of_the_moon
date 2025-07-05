@@ -5,6 +5,12 @@ if (localStorage.getItem("galleryPass") !== correct) {
 } else {
   const galleryData = [
     {
+      src: "2025:7:5-01.jpg",
+      title: "黄金の眼",
+      caption: "「————有り得ない。」"
+    },
+
+    {
       src: "20250531.jpg",
       title: "三夜の夢",
       caption: "もっと酷く抱いて欲しかった。"
