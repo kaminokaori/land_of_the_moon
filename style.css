@@ -169,3 +169,11 @@ img {
   color: #ff9999;
 }
 
+/* ニュース欄スクロール対応 */
+.news {
+  max-height: 200px; /* 高さはお好みで */
+  overflow-y: auto;
+  padding-right: 1em; /* スクロールバーで文字が隠れないよう余白を追加 */
+  border: 1px solid #ccc; /* 見やすくするための枠線（任意） */
+  background-color: #fdfdfd; /* 背景色（お好みで） */
+}
