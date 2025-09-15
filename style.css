@@ -169,11 +169,13 @@ img {
   color: #ff9999;
 }
 
-/* ニュース欄スクロール対応 */
+/* ニュース欄スクロール対応（ダークテーマ調整済み） */
 .news {
-  max-height: 200px; /* 高さはお好みで */
-  overflow-y: auto;
-  padding-right: 1em; /* スクロールバーで文字が隠れないよう余白を追加 */
-  border: 1px solid #ccc; /* 見やすくするための枠線（任意） */
-  background-color: #fdfdfd; /* 背景色（お好みで） */
+  max-height: 200px;                 /* スクロール発生条件 */
+  overflow-y: auto;                  /* 縦スクロール許可 */
+  padding-right: 1em;               /* スクロールバー余白 */
+  border: 1px solid #444;           /* 暗めの枠線でなじませる */
+  background-color: #2a2a2a;        /* 本体より少し明るいダーク */
+  border-radius: 8px;               /* 見た目整える */
+  padding: 1em;
 }
