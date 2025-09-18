@@ -77,9 +77,12 @@ if (localStorage.getItem("galleryPass") !== correct) {
     },
   ];
 
-  const container = document.getElementById("galleryArea");
+ const container = document.getElementById("galleryArea");
   let html = `
     <section>
+      <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="oldworks.html" style="color: #f0f0f0; text-decoration: underline; font-weight: bold;">▶︎ 過去絵ギャラリーへ</a>
+      </nav>
       <h2>イラスト一覧</h2>
       <div class="gallery">
   `;
