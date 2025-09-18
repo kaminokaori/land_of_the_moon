@@ -81,7 +81,7 @@ if (localStorage.getItem("galleryPass") !== correct) {
   let html = `
     <section>
       <nav style="text-align: center; margin-bottom: 20px;">
-        <a href="oldworks.html" style="color: #f0f0f0; text-decoration: underline; font-weight: bold;">▶︎ 過去絵</a>
+        <a href="oldworks.html" style="color: #f0f0f0; text-decoration: underline; font-weight: bold;">▶︎ 過去絵（建築予定）</a>
       </nav>
       <h2>イラスト一覧</h2>
       <div class="gallery">
